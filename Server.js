@@ -15,7 +15,7 @@ const port = process.env.PORT || 3000
 app.use(bodyparser.json())
 app.use(express.json())
 app.use(cors({
-    origin: '*',
+    origin: ['https://kricoding.netlify.app'],
     Credential: true,
     Headers: ['Content-Type', 'Authorization']
 }))
